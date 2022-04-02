@@ -8,7 +8,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
     {
         type: "input",
-        name: "name",
+        name: "title",
         message: "What is the title of your project? (Required)"
     },
     {
@@ -19,17 +19,19 @@ const questions = [
     {
         type: "input",
         name: "install",
-        messgae: "What is required to install your project?"
+        message: "What is required to install your project?",
+        default: "npm install"
     },
     {
         type: "input",
         name: "usage",
-        message: "Provide instructions and examples for use.  Include a screenshot if needed."
+        message: "Provide instructions and examples for use."
     },
     {
-        type: "checkbox",
+        type: "list",
         name: "license",
-        message: "Choose which license you used:"
+        message: "Choose which license you used:",
+        choices: ["MIT", "Apache 2.0", "GNU General Public License 2.0", "BSD License 2.0"]
     },
     {
         type: "input",
@@ -54,15 +56,19 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile("README.md", generateMarkdown(), err => {
-        if (err) throw err;
-        console.log("README is ready!  Check out README.md to see the page!")
-    });
-};
+// function writeToFile(fileName, data) {
+//     fs.writeFile("README.md", generateMarkdown(), err => {
+//         if (err) throw err;
+//         console.log("README is ready!  Check out README.md to see the page!")
+//     });
+// };
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    // call inqurier to run the question array
+    inquirer.prompt(questions);
+
+}
 
 // Function call to initialize app
 init();
