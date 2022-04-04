@@ -18,7 +18,12 @@ function generateMarkdown(data) {
 //   ${}
 
 //   ## Table of Contents
-//   * 
+//   * Installation
+// * Usage
+//   * License
+//   * Contributing
+//   * Tests
+//   * Questions
 
 //   ## Installation
 //   To install required dependecies, run the following command:
