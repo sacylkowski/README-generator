@@ -9,12 +9,28 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "What is the title of your project? (Required)"
+        message: "What is the title of your project? (Required)",
+        validate: projectTitle => {
+            if (projectTitle) {
+                return true;
+            } else {
+                console.log("Please enter the project title!");
+                return false;
+            }
+        }
     },
     {
         type: "input",
         name: "description",
-        message: "Provide a description of the project that includes a little bit about why you built the app, what problems does it solve, and what did you learn (Required):"
+        message: "Provide a description of the project that includes a little bit about why you built the app, what problems does it solve, and what did you learn (Required):",
+        validate: projectDes => {
+            if (projectDes) {
+                return true;
+            } else {
+                console.log("Please enter a description!");
+                return false;
+            }
+        }
     },
     {
         type: "input",
@@ -51,7 +67,15 @@ const questions = [
     {
         type: "input",
         name: "email",
-        message: "What is your e-mail address? (Required)"
+        message: "What is your e-mail address? (Required)",
+        validate: userEmail => {
+            if (userEmail) {
+                return true;
+            } else {
+                console.log("Please enter your e-mail!");
+                return false;
+            }
+        }
     },
 ];
 
