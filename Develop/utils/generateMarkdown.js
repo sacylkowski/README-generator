@@ -15,23 +15,31 @@ function generateMarkdown(data) {
 //   return `# ${data.title}
 
 //   ## Description
-//   ${}
+//   ${data.description}
 
 //   ## Table of Contents
-//   * 
+  // * [Installation](#installation)
+  // * [Usage](#usage)
+  // * [License](#license)
+  // * [Contributing](#contributing)
+  // * [Tests](#tests)
+  // * [Questions](#questions)
 
 //   ## Installation
 //   To install required dependecies, run the following command:
-//   ${}
+//   ${data.install}
 
 //   ## Usage
+//   ${data.usage}
 
 //   ## License
-//   This project is licensed under 
+//   This project is licensed under ${data.license}
 
 //   ## Contributing
+//  ${data.contribute}
 
 //   ## Tests
+//  ${data.tests}
 
 //   ## Questions
 //   If you have any questions, please reach out on <a href="https://github.com/${data.github}/">GitHub</a> or you can <a href="mailto:${data.email}">E-mail me</a>.
