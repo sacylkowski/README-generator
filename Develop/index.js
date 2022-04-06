@@ -9,12 +9,28 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "What is the title of your project? (Required)"
+        message: "What is the title of your project? (Required)",
+        validate: projectTitle => {
+            if (projectTitle) {
+                return true;
+            } else {
+                console.log("Please enter the project title!");
+                return false;
+            }
+        }
     },
     {
         type: "input",
         name: "description",
-        message: "Provide a description of the project that includes a little bit about why you built the app, what problems does it solve, and what did you learn (Required):"
+        message: "Provide a description of the project that includes a little bit about why you built the app, what problems does it solve, and what did you learn (Required):",
+        validate: projectDes => {
+            if (projectDes) {
+                return true;
+            } else {
+                console.log("Please enter a description!");
+                return false;
+            }
+        }
     },
     {
         type: "input",
@@ -51,24 +67,38 @@ const questions = [
     {
         type: "input",
         name: "email",
-        message: "What is your e-mail address? (Required)"
+        message: "What is your e-mail address? (Required)",
+        validate: userEmail => {
+            if (userEmail) {
+                return true;
+            } else {
+                console.log("Please enter your e-mail!");
+                return false;
+            }
+        }
     },
 ];
-
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//     fs.writeFile("README.md", generateMarkdown(), err => {
-//         if (err) throw err;
-//         console.log("README is ready!  Check out README.md to see the page!")
-//     });
-// };
 
 // TODO: Create a function to initialize app
 function init() {
     // call inqurier to run the question array
-    inquirer.prompt(questions);
+    inquirer.prompt(questions)
+    .then((data) => {
+        console.log(data);
+        writeToFile(data);
+    })
 
-}
+};
+
+// TODO: Create a function to write README file
+function writeToFile(data) {
+    fs.writeFile("./newREADME.md", generateMarkdown(data), function(err) {
+        if (err) {
+            return console.error(err);
+        }
+        console.log("README is ready!  Check out README.md to see the page!");
+    });
+};
 
 // Function call to initialize app
 init();
