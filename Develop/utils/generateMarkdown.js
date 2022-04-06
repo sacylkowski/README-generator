@@ -12,38 +12,39 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-//   return `# ${data.title}
+  return `# ${data.title}
 
-//   ## Description
-//   ${data.description}
 
-//   ## Table of Contents
-  // * [Installation](#installation)
-  // * [Usage](#usage)
-  // * [License](#license)
-  // * [Contributing](#contributing)
-  // * [Tests](#tests)
-  // * [Questions](#questions)
+  ## Description
+  ${data.description}
 
-//   ## Installation
-//   To install required dependecies, run the following command:
-//   ${data.install}
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
-//   ## Usage
-//   ${data.usage}
+  ## Installation
+  To install required dependecies, run the following command:
+  ${data.install}
 
-//   ## License
-//   This project is licensed under ${data.license}
+  ## Usage
+  ${data.usage}
 
-//   ## Contributing
-//  ${data.contribute}
+  ## License
+  This project is licensed under ${data.license}
 
-//   ## Tests
-//  ${data.tests}
+  ## Contributing
+ ${data.contribute}
 
-//   ## Questions
-//   If you have any questions, please reach out on <a href="https://github.com/${data.github}/">GitHub</a> or you can <a href="mailto:${data.email}">E-mail me</a>.
-// `;
+  ## Tests
+ ${data.tests}
+
+  ## Questions
+  If you have any questions, please reach out on <a href="https://github.com/${data.github}/">GitHub</a> or you can <a href="mailto:${data.email}">E-mail me</a>.
+`;
 }
 
 module.exports = generateMarkdown;
