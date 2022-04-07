@@ -1,8 +1,9 @@
-# title
+# gf
+  undefined;
 
 
   ## Description
-  does stuff
+  gf
 
   ## Table of Contents
   * [Installation](#installation)
@@ -17,16 +18,18 @@
   npm install
 
   ## Usage
-  
+  hah
 
   ## License
-  This project is licensed under MIT
+  Copyright (C) 2022 
+  gf is licensed under GNU General Public License 2.0.
+  Read more about GNU General Public License 2.0 <a href="undefined">here</a>
 
   ## Contributing
- pull then look at issues
+ isdf
 
   ## Tests
- npm run test
+ jdhkk
 
   ## Questions
-  If you have any questions, please reach out on <a href="https://github.com/sacylkowski/">GitHub</a> or you can <a href="mailto:sacylkowski@gmail.com">E-mail me</a>.
+  If you have any questions, please reach out on <a href="https://github.com/hassj/">GitHub</a> or you can <a href="mailto:sacylkowski@gmail.com">E-mail me</a>.
