@@ -6,9 +6,9 @@ function renderLicenseBadge(license) {
     } else if (license === "Apache 2.0") {
       selectLicense = `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
     } else if (license === "GNU General Public License 2.0") {
-      selectLicense = `[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)`
+      selectLicense = `![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)`
     } else if (license === "BSD License 2.0") {
-      selectLicense = `[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)`
+      selectLicense = `![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)`
     } else {
       selectLicense = "";
     }
@@ -41,7 +41,7 @@ function renderLicenseSection(license, title) {
     return `## License
     Copyright (C) ${new Date().getFullYear()} 
     ${title} is licensed under ${license}.
-    Read more about ${license} <a href="${renderLicenseLink(license)}">here</a>`
+    Read more about ${license} at this site: ${renderLicenseLink(license)}`
   }
 };
 

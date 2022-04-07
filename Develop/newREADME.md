@@ -1,9 +1,9 @@
-# agsdjhs
-  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+# jaskdh
+  ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)
 
 
   ## Description
-  kjagsds
+  kjhasd
 
   ## Table of Contents
   * [Installation](#installation)
@@ -15,21 +15,21 @@
 
   ## Installation
   To install required dependecies, run the following command:
-  npm install
+  kjahsda
 
   ## Usage
-  jkhagsd
+  kjahsda
 
   ## License
     Copyright (C) 2022 
-    agsdjhs is licensed under Apache 2.0.
-    Read more about Apache 2.0 <a href="https://opensource.org/licenses/Apache-2.0">here</a>
+    jaskdh is licensed under GNU General Public License 2.0.
+    Read more about GNU General Public License 2.0 at this site: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
   ## Contributing
- kjasd
+ kjahsd
 
   ## Tests
  kjasda
 
   ## Questions
-  If you have any questions, please reach out on <a href="https://github.com/kjahsd/">GitHub</a> or you can <a href="mailto:kjahsd">E-mail me</a>.
+  If you have any questions, please reach out on <a href="https://github.com/khasd/">GitHub</a> or you can <a href="mailto:jkhas">E-mail me</a>.
