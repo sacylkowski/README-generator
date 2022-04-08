@@ -9,7 +9,10 @@
 
   ## Usage
   This app is simple to use.  You fill out the prompts appropriately and the README is then generated.
+  
   <img src="Develop/example.png" alt="image of program running" width="1206" />
+  
+  <a href="https://drive.google.com/file/d/1mnIr4vxsyMJhQuSlWARw5TUaXLJjeFps/view">Click here to see demo video.</a>
 
   ## Questions
   If you have any questions, please reach out on <a href="https://github.com/sacylkowski/">GitHub</a> or you can <a href="mailto:sacylkowski@gmail.com">E-mail me</a>.
